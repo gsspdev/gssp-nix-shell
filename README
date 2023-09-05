@@ -1,1 +1,7 @@
 this is a nix-shell environment
+
+run this command to get started
+
+'''
+docker run -it -v $(pwd)/workdir:/workdir nixos/nix
+'''
