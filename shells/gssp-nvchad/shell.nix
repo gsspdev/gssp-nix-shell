@@ -3,15 +3,10 @@ let
 in
   pkgs.mkShell {
     packages = [
-      pkgs.python3
       pkgs.curl
       pkgs.vim
       pkgs.git
-      pkgs.nodejs
       pkgs.neovim
-      pkgs.ripgrep
-      pkgs.wget
-      pkgs.alacritty
     ];
 
 #      env = {
@@ -28,7 +23,7 @@ in
 chmod u+x nvim.appimage
 ./nvim.appimage
       git clone https://github.com/NvChad/NvChad ~/.config/nvim
-      echo "i guess it's bi"
+      nvim
     '';
   }
   
