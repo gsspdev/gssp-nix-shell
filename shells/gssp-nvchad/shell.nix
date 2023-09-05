@@ -3,9 +3,11 @@ let
 in
   pkgs.mkShell {
     packages = [
-      pkgs.curl
-      pkgs.vim
       pkgs.git
+      pkgs.curl
+      pkgs.nodejs
+      pkgs.unzip
+      pkgs.vim
       pkgs.neovim
     ];
 
