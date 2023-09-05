@@ -1,5 +1,4 @@
 docker run -it \
--v $(pwd)/default:/default \
 -v $(pwd)/gssp-nvchad:/gssp-nvchad \
 -v $(pwd)/gssp-shell:/gssp-shell \
 -v $(pwd)/gssp-spacemacs:/gssp-spacemacs \
