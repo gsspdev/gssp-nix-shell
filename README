@@ -1,22 +1,37 @@
-# this is a nix-shell environment
+# INSTALLATION
 
-# to get started simply:
-# 
-# start a nix docker container
+## Install Docker
+## https://docs.docker.com/engine/install/
+
+## Clone this repo and cd into it
 
 '''
-docker run -it \
--v $(pwd)/gssp-nvchad:/gssp-nvchad \
--v $(pwd)/gssp-shell:/gssp-shell \
--v $(pwd)/gssp-spacemacs:/gssp-spacemacs \
--v $(pwd)/gssp-spacevim:/gssp-spacevim \
--v $(pwd)/python-shell:/python-shell \
--v $(pwd)/rust-shell:/rust-shell \
-nixos/nix
+git clone https://github.com/gsspdev/gssp-nix-shell.git
+cd gssp-nix-shell
 '''
 
-# then enter the working directory and start the nix-shell
+## Make start-docker.sh executable
+
 '''
-cd workdir
+chmod +x start-docker.sh
+'''
+
+## Run start-docker.sh to install the nix docker image and start the container
+
+'''
+./start-docker.sh
+'''
+
+## Run the nix-shell command to enter the default nix shell
+
+'''
+nix-shell
+'''
+
+## Alternatively the /shells/ directory has a number of different shells that can be entered
+
+'''
+cd shells
+cd nix-shell-you-use
 nix-shell
 '''
