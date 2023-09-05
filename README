@@ -10,12 +10,6 @@ git clone https://github.com/gsspdev/gssp-nix-shell.git
 cd gssp-nix-shell
 '''
 
-## Make start-docker.sh executable
-
-'''
-chmod +x start-docker.sh
-'''
-
 ## Run start-docker.sh to install the nix docker image and start the container
 
 '''
