@@ -11,6 +11,7 @@ cd gssp-nix-shell
 '''
 
 ## Run start-docker.sh to install the nix docker image and start the container
+### (May need to be run as sudo)
 
 '''
 ./start-docker.sh
@@ -22,7 +23,7 @@ cd gssp-nix-shell
 nix-shell
 '''
 
-## Alternatively the /shells/ directory has a number of different shells that can be entered
+## Alternatively the /shells directory has a number of different shells that can be entered
 
 '''
 cd shells
