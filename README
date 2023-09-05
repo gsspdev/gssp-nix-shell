@@ -1,7 +1,13 @@
 this is a nix-shell environment
 
-run this command to get started
+start a nix docker container
 
 '''
 docker run -it -v $(pwd)/workdir:/workdir nixos/nix
+'''
+
+enter into the working directory and start a nix-shell
+'''
+cd workdir
+nix-shell
 '''
