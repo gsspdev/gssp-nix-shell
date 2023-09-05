@@ -5,7 +5,15 @@
 # start a nix docker container
 
 '''
-docker run -it -v $(pwd)/workdir:/workdir nixos/nix
+docker run -it \
+-v $(pwd)/default:/default \
+-v $(pwd)/gssp-nvchad:/gssp-nvchad \
+-v $(pwd)/gssp-shell:/gssp-shell \
+-v $(pwd)/gssp-spacemacs:/gssp-spacemacs \
+-v $(pwd)/gssp-spacevim:/gssp-spacevim \
+-v $(pwd)/python-shell:/python-shell \
+-v $(pwd)/rust-shell:/rust-shell \
+nixos/nix
 '''
 
 # then enter the working directory and start the nix-shell
