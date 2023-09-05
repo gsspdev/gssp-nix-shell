@@ -6,4 +6,4 @@ docker run -it \
 -v $(pwd)/shells/python-shell:/shells/python-shell \
 -v $(pwd)/shells/rust-shell:/shells/rust-shell \
 -v $(pwd)/default.nix:/default.nix \
-nixos/nix
+docker.io:nixos/nix
