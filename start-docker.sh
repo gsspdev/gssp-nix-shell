@@ -1,1 +1,1 @@
-docker run -it -v $(pwd)/workdir:/workdir nixos/nix
+docker run -it -v $(pwd)/gssp-shell:/gssp-shell nixos/nix
