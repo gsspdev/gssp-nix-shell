@@ -3,6 +3,7 @@ let
 in
   pkgs.mkShell {
     packages = [
+      pkgs.ack
       pkgs.git
       pkgs.curl
       # pkgs.tar
@@ -24,6 +25,7 @@ in
     # Set shell prompt format, ensure that 'should_exist.txt exists'
     shellHook = ''
       git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
+      emacs
     '';
   }
   
