@@ -5,4 +5,5 @@ docker run -it \
 -v $(pwd)/shells/rust-shell:/shells/rust-shell \
 -v $(pwd)/default.nix:/default.nix \
 -v $(pwd)/nvchad.sh:/nvchad.sh \
+-v $(pwd)/spacemacs.sh:/spacemacs.sh \
 docker.io/nixos/nix
