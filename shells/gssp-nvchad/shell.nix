@@ -20,7 +20,6 @@ in
     # Set shell prompt format, ensure that 'should_exist.txt exists'
     shellHook = ''
       export PS1="\u@\h >>> "
-      touch touch-test.txt
       curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 ./nvim.appimage
