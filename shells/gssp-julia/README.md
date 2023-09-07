@@ -1,7 +1,1 @@
-this is the nix working directory for the shell environment
-
-run nix-shell from here to start the nix-shell
-
-'''
-nix-shell
-'''
+this shell is a WORK IN PROGRESS

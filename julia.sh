@@ -1,2 +1,3 @@
-cd shells/gssp-julia
+cd shells
+cd gssp-julia
 nix-shell
