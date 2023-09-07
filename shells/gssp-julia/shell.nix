@@ -20,6 +20,9 @@ in
     shellHook = ''
       export PS1="\u@\h >>> "
       nixos-rebuild switch 
+      git clone https://github.com/JuliaLang/julia.git
+      cd julia
+      ./julia
     '';
   }
   
