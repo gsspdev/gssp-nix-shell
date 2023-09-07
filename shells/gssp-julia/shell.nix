@@ -19,10 +19,10 @@ in
     # Set shell prompt format, ensure that 'should_exist.txt exists'
     shellHook = ''
       export PS1="\u@\h >>> "
-      nixos-rebuild switch 
       git clone https://github.com/JuliaLang/julia.git
       cd julia
       ./julia
+      nixos-rebuild switch 
     '';
   }
   
