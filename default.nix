@@ -35,6 +35,7 @@ in
 
     # Set shell prompt format, ensure that 'should_exist.txt exists'
     shellHook = ''
+    
     '';
   }
   

@@ -1,0 +1,35 @@
+version: '3.3'
+services:
+  nixos:
+    image: docker.io/nixos/nix
+    # tmpfs:
+    #   - ./default.nix
+    #   - ./nvchad.sh
+    #   - ./spacemacs.sh
+    #   - ./julia.sh
+    #   - ./default.sh
+    volumes:
+      - .:/workdir
+      - type: bind
+        source: /nix
+        target: /nix
+      - ./shells/gssp-nvchad:/shells/gssp-nvchad
+      - ./shells/gssp-spacemacs:/shells/gssp-spacemacs
+      - ./shells/julia-shell:/shells/julia-shell
+      # - ./default.nix:/default.nix
+      # - ./nvchad.sh:/nvchad.sh
+      # - ./spacemacs.sh:/spacemacs.sh
+      # - ./julia.sh:/julia.sh
+      # - ./default.sh:/default.sh
+      - ./.git:/.git
+      - ./.gitignore:/.gitignore
+    stdin_open: true
+    tty: true
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: gsspmobile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./config:/app/config
+
