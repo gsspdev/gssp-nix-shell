@@ -26,6 +26,7 @@ in
     shellHook = ''
       git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
       emacs
+      export PS1="\u@\h >>> "
     '';
   }
   
