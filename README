@@ -1,30 +1,10 @@
 # INSTALLATION
 
-## Install Docker
-## https://docs.docker.com/engine/install/
-
-## Clone this repo and cd into it
-
-'''
-git clone https://github.com/gsspdev/gssp-nix-shell.git
-cd gssp-nix-shell
-'''
-
-## Run start-docker.sh to install the nix docker image and start the container
-### (May need to be run as sudo)
-
-'''
-./start-docker.sh
-'''
-
-## Run the nix-shell command to enter the default nix shell
-
-'''
-nix-shell
-'''
+1. Have Docker applicaton runnng
+2. Run './start-docker.sh' (may need sudo)
+3. Run 'nix-shell'
 
 ## Alternatively the /shells directory has a number of different shells that can be entered
-
 '''
 cd shells
 cd nix-shell-you-use
