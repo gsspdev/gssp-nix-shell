@@ -13,9 +13,12 @@ services:
       - type: bind
         source: /nix
         target: /nix
+      - ./shells/gssp-neovim:/shells/gssp-neovim
       - ./shells/gssp-nvchad:/shells/gssp-nvchad
       - ./shells/gssp-spacemacs:/shells/gssp-spacemacs
       - ./shells/julia-shell:/shells/julia-shell
+      - ./bash_scripts:/bash_scripts
+      - ./nvchad:/nvchad
       # - ./default.nix:/default.nix
       # - ./nvchad.sh:/nvchad.sh
       # - ./spacemacs.sh:/spacemacs.sh

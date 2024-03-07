@@ -11,4 +11,6 @@ docker run -it \
 -v $(pwd)/.git \
 -v $(pwd)/.gitignore \
 -v $(pwd)/flake.nix:/flake.nix \
+-v $(pwd)/nvchad:/nvchad \
+-v $(pwd)/bash_scripts:/bash_scripts \
 docker.io/nixos/nix
