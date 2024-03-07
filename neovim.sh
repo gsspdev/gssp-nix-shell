@@ -1,1 +1,2 @@
-cd shells/gssp-neovim.nix
+cd shells/gssp-neovim
+nix-shell
