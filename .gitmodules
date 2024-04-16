@@ -1,0 +1,3 @@
+[submodule "NX_NOTE"]
+	path = NX_NOTE
+	url = https://github.com/gsspdev/NX_NOTE.git
