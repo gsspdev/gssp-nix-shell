@@ -27,6 +27,10 @@ in
       pkgs.firefox
     ];
 
+{ config, pkgs, ... }: {
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+}
+
 #      env = {
 #       # some credentials
 #       SOME_USER = "some_user";
