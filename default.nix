@@ -24,7 +24,15 @@ in
       pkgs.yarn
       pkgs.htop
       pkgs.bun
-      pkgs.firefox
+      pkgs.rustc
+      pkgs.cargo
+      pkgs.clang
+      pkgs.cmake
+      pkgs.ghc
+      pkgs.helix
+      pkgs.zsh
+      pkgs.emacs
+      pkgs.curl
     ];
 
 #      env = {
@@ -36,6 +44,14 @@ in
     # Set shell prompt format, ensure that 'should_exist.txt exists'
     shellHook = ''
       export PS1="\u@\h >>> "
+      python3 --versoin
+      bun --version
+      ghc --version
+      cargo --version
+      clang --version
+      cmake --version
+      rustc --version
+      curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
     '';
   }
   
